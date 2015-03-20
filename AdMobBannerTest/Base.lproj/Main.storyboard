@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WQZ-as-WbK">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.072362224894511037" green="0.082403570596810735" blue="0.57325205176767668" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7qm-AW-oXe"/>
+                                    <constraint firstAttribute="height" constant="175" id="csi-98-xsS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7qm-AW-oXe"/>
+                                        <exclude reference="csi-98-xsS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="7qm-AW-oXe"/>
+                                        <include reference="csi-98-xsS"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pr5-FV-KtV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.24003179865017257" green="0.57325205176767668" blue="0.16509642068839392" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="65t-Ve-9jq"/>
+                                    <constraint firstAttribute="height" constant="40" id="pTZ-EX-v0C"/>
+                                </constraints>
+                                <state key="normal" title="Surprise">
+                                    <color key="titleColor" red="0.91258285984848486" green="0.83627717770051468" blue="0.10906415908488695" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="65t-Ve-9jq"/>
+                                        <exclude reference="pTZ-EX-v0C"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="65t-Ve-9jq"/>
+                                        <include reference="pTZ-EX-v0C"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="surprise:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Br-tS-Ftu"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qc6-9J-gLE" userLabel="Hidden Banner" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.90249763449999998" green="0.74624336680000003" blue="0.93440261989999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="9ub-qF-WC1"/>
+                                    <constraint firstAttribute="height" constant="50" id="GU5-kB-b0f"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9ub-qF-WC1"/>
+                                        <exclude reference="GU5-kB-b0f"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="9ub-qF-WC1"/>
+                                        <include reference="GU5-kB-b0f"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bus-Sz-IgH" userLabel="Banner View" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="TIH-tY-eBJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="i7Y-Oj-VC0"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="TIH-tY-eBJ"/>
+                                        <exclude reference="i7Y-Oj-VC0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="TIH-tY-eBJ"/>
+                                        <include reference="i7Y-Oj-VC0"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7b-Ir-nrN" userLabel="MultiBanner View" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="n52-Yr-oPB"/>
+                                    <constraint firstAttribute="height" constant="50" id="tqC-7c-8fs"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="n52-Yr-oPB"/>
+                                        <exclude reference="tqC-7c-8fs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="n52-Yr-oPB"/>
+                                        <include reference="tqC-7c-8fs"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="l7b-Ir-nrN" secondAttribute="bottom" id="Dfz-yn-vvt"/>
+                            <constraint firstAttribute="centerX" secondItem="Qc6-9J-gLE" secondAttribute="centerX" id="JSG-9J-Abe"/>
+                            <constraint firstAttribute="centerX" secondItem="WQZ-as-WbK" secondAttribute="centerX" id="KG7-yO-G0l"/>
+                            <constraint firstItem="Qc6-9J-gLE" firstAttribute="top" secondItem="bus-Sz-IgH" secondAttribute="bottom" constant="-25" id="OJe-Ey-EJe"/>
+                            <constraint firstItem="bus-Sz-IgH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Oap-Hx-JbR"/>
+                            <constraint firstItem="pr5-FV-KtV" firstAttribute="top" secondItem="WQZ-as-WbK" secondAttribute="bottom" constant="30" id="Voq-VV-mcx"/>
+                            <constraint firstAttribute="centerY" secondItem="WQZ-as-WbK" secondAttribute="centerY" id="myf-zD-cfd"/>
+                            <constraint firstAttribute="centerX" secondItem="bus-Sz-IgH" secondAttribute="centerX" id="qIn-t5-VZG"/>
+                            <constraint firstAttribute="centerX" secondItem="pr5-FV-KtV" secondAttribute="centerX" id="svt-Tw-H63"/>
+                            <constraint firstAttribute="centerX" secondItem="l7b-Ir-nrN" secondAttribute="centerX" id="uPq-xE-RjF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WQZ-as-WbK"/>
+                                <exclude reference="pr5-FV-KtV"/>
+                                <exclude reference="Qc6-9J-gLE"/>
+                                <exclude reference="bus-Sz-IgH"/>
+                                <exclude reference="l7b-Ir-nrN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Dfz-yn-vvt"/>
+                                <exclude reference="Voq-VV-mcx"/>
+                                <exclude reference="svt-Tw-H63"/>
+                                <exclude reference="KG7-yO-G0l"/>
+                                <exclude reference="myf-zD-cfd"/>
+                                <exclude reference="JSG-9J-Abe"/>
+                                <exclude reference="OJe-Ey-EJe"/>
+                                <exclude reference="Oap-Hx-JbR"/>
+                                <exclude reference="qIn-t5-VZG"/>
+                                <exclude reference="uPq-xE-RjF"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="WQZ-as-WbK"/>
+                                <include reference="pr5-FV-KtV"/>
+                                <include reference="Qc6-9J-gLE"/>
+                                <include reference="bus-Sz-IgH"/>
+                                <include reference="l7b-Ir-nrN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Dfz-yn-vvt"/>
+                                <include reference="Voq-VV-mcx"/>
+                                <include reference="svt-Tw-H63"/>
+                                <include reference="KG7-yO-G0l"/>
+                                <include reference="myf-zD-cfd"/>
+                                <include reference="JSG-9J-Abe"/>
+                                <include reference="OJe-Ey-EJe"/>
+                                <include reference="Oap-Hx-JbR"/>
+                                <include reference="qIn-t5-VZG"/>
+                                <include reference="uPq-xE-RjF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="bus-Sz-IgH" id="2Oa-yw-Fhc"/>
+                        <outlet property="hiddenBannerView" destination="Qc6-9J-gLE" id="Gr1-5e-gcl"/>
+                        <outlet property="multiBannerView" destination="l7b-Ir-nrN" id="ncw-0h-Jqe"/>
+                        <outlet property="surpriseButton" destination="pr5-FV-KtV" id="Yp0-Pa-Iq1"/>
+                        <outlet property="surpriseImage" destination="WQZ-as-WbK" id="52H-3H-bcZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
